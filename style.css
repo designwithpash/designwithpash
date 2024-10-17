@@ -33,8 +33,8 @@ h1{
 
 h2{
     font-size: 4rem;
-    margin-top: 4vh;
-    margin-bottom: 2vh;
+    margin-top: 4dvh;
+    margin-bottom: 2dvh;
     color: rgb(241, 241, 241);
     line-height: 1.3; 
     display: flex;
@@ -217,14 +217,14 @@ Hero area */
 .hero-area{
     display: flex;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 5dvh;
 }
 
 .hero-section{
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(16, 16, 16);
-    height: 60vh;
+    height: 60dvh;
     position: relative;
     justify-content: center;
     margin: 0;
@@ -233,7 +233,7 @@ Hero area */
 .h-section{
     display: flex;
     justify-content: center;
-    padding: 10vh;
+    padding: 10dvh;
     border-radius: 50px;
     background-color: rgb(24, 24, 24);
 }
@@ -247,15 +247,15 @@ Hero area */
 
 
 .hero-image>img{
-    height: 60vh;
+    height: 60dvh;
     position: absolute;
     bottom: 0%;
 
 }
 
 .circle{
-    width: 40vh;
-    height: 40vh;
+    width: 40dvh;
+    height: 40dvh;
     border-radius: 50%;
     background-color: #ff623a;
     align-content: center;
@@ -336,7 +336,7 @@ Portfolio section  */
     background: #434343;
     border-radius: 30px;
     overflow: hidden;
-   margin-top: 2vh;
+   margin-top: 2dvh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -394,17 +394,18 @@ Portfolio section  */
     .wrapper{
         min-width: 1360px;
     }
-    .hero-area{
-        display: block }
     .h-section{
         position: relative;
-        padding: 10vh;
+        padding: 10dvh;
         width: 100%;
+    }
+    .hero-area{
+        display: block;
     }
     .hero-image{
         position: absolute;
-        top: 20vh;
-        left: 60vh;
+        top: 20dvh;
+        left: 60dvh;
     }
     p{  font-size: 27px;
         margin-top: 2rem;
@@ -416,8 +417,8 @@ Portfolio section  */
     .h-content{
         font-size: 4rem;
         position: absolute;
-        right: 50vh;
-        top: 13vh
+        right: 50dvh;
+        top: 13dvh
     }
 
  }
@@ -485,24 +486,27 @@ Portfolio section  */
     }
     .hero-image>img{
         position: absolute;
-        top:0.3vh;
-        height: 50vh;
+        top:0.3dvh;
+        height: 50dvh;
 
     }    
 
     .portfolio{
 
         width: 100%;
-        margin-top: 2vh;
+        margin-top: 2dvh;
         display: flex;
         flex-wrap: wrap;
         gap: 80px;
     
 
     }
+    .innerCards{
+        height: 80dvh;
+    }
     .portfolioCard{
-        width: 100vh;
-        height: 90vh;
+        width: 100dvh;
+        height: auto;
         padding: 50px;
     }
     .item2{
@@ -512,6 +516,7 @@ Portfolio section  */
     }
     .verticalInnerCards{
         margin-top: 30px;
+        height: 80dvh;
     }
     h3{
         justify-content: left;
@@ -524,7 +529,7 @@ Portfolio section  */
 
     h4{
         font-size: 4rem;
-        margin-top: 55vh;
+        margin-top: 50dvh;
       
     }
     
@@ -540,7 +545,7 @@ Portfolio section  */
        }
     h4{
         font-size: 4rem;
-        margin-top: 70vh;
+        margin-top: 70dvh;
       
     }
 }
