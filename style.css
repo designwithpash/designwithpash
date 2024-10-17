@@ -420,7 +420,11 @@ Portfolio section  */
         right: 50dvh;
         top: 13dvh
     }
-
+    h4{
+        font-size: 4rem;
+        margin-top: 10dvh;
+      
+    }
  }
 
 
@@ -529,7 +533,7 @@ Portfolio section  */
 
     h4{
         font-size: 4rem;
-        margin-top: 50dvh;
+        margin-top: 60dvh;
       
     }
     
@@ -545,7 +549,7 @@ Portfolio section  */
        }
     h4{
         font-size: 4rem;
-        margin-top: 70dvh;
+        margin-top: 90dvh;
       
     }
 }
