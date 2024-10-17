@@ -394,6 +394,8 @@ Portfolio section  */
     .wrapper{
         min-width: 1360px;
     }
+    .hero-area{
+        display: block }
     .h-section{
         position: relative;
         padding: 10vh;
