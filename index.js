@@ -60,3 +60,11 @@ video.addEventListener("pause", () => {
 video.addEventListener("ended", () => {
     playButton.style.display='block';
 })
+// Hide play button on user interaction with the video
+video.addEventListener('play', () => {
+    playButton.style.display = 'none'; // Hide play button when video plays
+});
+
+video.addEventListener('pause', () => {
+    playButton.style.display = 'block'; // Show play button when video pauses
+});
