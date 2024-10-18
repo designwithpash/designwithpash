@@ -221,10 +221,13 @@ Hero area */
     width: 100%;
 
 }
+.hero-image{
+    display: flex;
+}
 .h-section{
     display: flex;
     justify-content: center;
-    padding: 60px;
+    padding: 10px 60px 0px 60px;
     border-radius: 50px;
     background-color: rgb(24, 24, 24);
     position: relative;
@@ -236,14 +239,13 @@ Hero area */
 }
 
 
-.hero-image>img{
-    height: 110%;
-    position: absolute;
+.hero-image>.img>img{
+    height: 40rem ;
     bottom: 0;
-    top: 3dvh;
+    z-index: 2;
+    position: relative;
 } 
-
-.hero-image>.circle{
+    .circle{
     width: 40dvh;
     height: 40dvh;
     border-radius: 50%;
@@ -253,6 +255,10 @@ Hero area */
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
     overflow: hidden;
+    z-index: 1 ;
+    position: absolute;
+    right: 10%;
+    top:20%;
 }
 
 /* Circle animation */
@@ -385,19 +391,24 @@ Portfolio section  */
     .h-section{
         display: flex;
         flex-direction: column;
-        padding: 3rem;
+        padding: 60px 30px 0px 30px ;
+        justify-content: space-between;
     }
     h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
+        line-height: 1.5;
     }
-    .hero-image>img{
-        height: 50%;
-        align-self: flex-end;
+    .circle{
+        top: 60%;
+        height: 80vw;
+        width: 80vw;
     }
-   .hero-image{
-    margin-top: 50px
-   }
-
+    #pash{
+        height: 30rem;
+    }
+    p{
+        font-size: 22px;
+    }
    .item2{
     flex-direction: column;
     gap:30px;
@@ -413,6 +424,6 @@ Portfolio section  */
     width: 50%;
    }
    .h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
    }
 }
