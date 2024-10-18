@@ -54,8 +54,8 @@ h4{
 
 p{
     font-size: 20px;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     color:rgb(169, 169, 169);
     line-height: 1.5;
     
@@ -410,6 +410,8 @@ Portfolio section  */
     }
     p{
         font-size: 22px;
+        margin-top: 1rem;
+        margin-bottom:2rem;
     }
    .item2{
     flex-direction: column;
