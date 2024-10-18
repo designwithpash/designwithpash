@@ -626,7 +626,11 @@ Portfolio section  */
 /* .t-cards{
     min-width: 100%;
     } */
-
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
 
    .btn-primary{
     width: 50%;
