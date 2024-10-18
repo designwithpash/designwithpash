@@ -253,14 +253,28 @@ Hero area */
     border-radius: 50%;
     background-color: #ff623a;
     align-content: center;
-    animation: scale 0.5s ease-in-out forwards , wiggle 2s ease-in-out infinite 0.5s;
+    animation: scale 0.5s ease-in-out forwards , wiggle 3s ease-in-out infinite 0.5s;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
-    overflow: hidden;
     z-index: 1 ;
     position: absolute;
     right: 10%;
     top:20%;
+}
+
+.circle-front{
+    width: 60dvh;
+    height: 60dvh;
+    border-radius: 100%;
+    background-color: #6f7bff;
+    align-content: center;
+    animation: scale 0.5s ease-in-out forwards , wiggle 8s ease-in-out infinite 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    left: 50%;
+    top:70%;
+    z-index: 3;
 }
 
 /* Circle animation */
@@ -408,8 +422,16 @@ Portfolio section  */
     }
     .circle{
         top: 60%;
-        height: 80vw;
-        width: 80vw;
+        left: 30%;
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .circle-front{
+        top: 90%;
+        left: 10%;
+        width: 90vw;
+        height: 90vw;
     }
     #pash{
         height: 30rem;
@@ -459,6 +481,12 @@ Portfolio section  */
         top: 60%;
         height: 80vw;
         width: 80vw;
+    }
+    .circle-front{
+        top: 90%;
+        left: 0%;
+        width: 110vw;
+        height: 100vw;
     }
     #pash{
         height: 30rem;
