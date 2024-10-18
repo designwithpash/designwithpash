@@ -51,12 +51,21 @@ h4{
 }
 
 p{
-    font-size: 20px;
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
-    color:rgb(169, 169, 169);
-    line-height: 1.5;
+    font-size: 18px;
+    /* margin-top: 1rem;
+    margin-bottom: 2.5rem; */
+    color:rgb(235, 235, 235);
+    line-height: 1.7;
+    margin: 0;
+    font-weight:400;
     
+}
+
+.emphasize{
+    font-weight: bold;
+    font-style: normal;
+    color: #ff623a;
+    font-size: 22px;
 }
 
 .btn-primary{
@@ -70,6 +79,7 @@ p{
     border-radius: 100px;
     display: flex;
     width: fit-content;
+    margin-top: 15px;
     
 }
 
@@ -224,6 +234,12 @@ Hero area */
 .hero-image{
     display: flex;
 }
+
+.h-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .h-section{
     display: flex;
     justify-content: center;
@@ -274,6 +290,8 @@ Hero area */
     top:70%;
     z-index: 3;
 }
+
+
 
 /* Circle animation */
 
@@ -395,7 +413,80 @@ Portfolio section  */
     position: absolute;
     filter: drop-shadow(5px 30px 30px #383838);
  }
- @media (min-width: 729px) and (max-width:1200px){
+
+/* 
+........Testimonials Section......... */
+
+ #myVideo{
+    display: flex;
+    border-radius: 30px;
+    width: 100%;
+}
+.videoSection{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#play-button>img{
+    width: 5rem;
+    height:5rem;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    top: 50%;
+    right: 50%;
+}
+.testimonialCards{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.quotes{
+    width: 60px;
+    position: absolute;
+    bottom: 87%
+}
+.t-cards{
+    margin-top: 50px;
+    width: 333px;
+    height: auto;
+    background-color: #181818;
+    border-radius: 30px;
+    padding: 50px;
+    
+}
+.t-image{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    align-items: center;
+}
+.clientImage{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #000000;
+    padding:30px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.icons{
+    width: 50px;
+}
+
+ @media (min-width: 729px) and (max-width:1372px){
     .portfolio{
         display: flex;
         flex-direction: column;
@@ -439,25 +530,42 @@ Portfolio section  */
     }
    .item2{
     flex-direction: column;
-    gap:30px;
-    align-items:flex-start;
+    text-align: center;
    }
+   
 
+   #play-button>img{
+    width: 6rem;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
    .verticalInnerCards{
-    height: 20rem ;
+    height: 50dvh ;
+    
    }
+   .innerCards{
+    height: 50dvh;}
+    .portfolioCard{
+        text-align: center;
+    }
    .btn-primary{
-    width: 50%;
+    width: 80% !important;
    }
    .btn-secondary{
-    width: 50%;
+    width: 94%;
    }
    .h3{
     font-size: 2rem;
     display: block;
    }
-
-
+ 
+    .quotes{
+        width: 60px;
+        position: relative;
+        margin-bottom: 20px;
+        bottom: 87%
+    }
  }
 
  @media (max-width:728px){
@@ -500,6 +608,26 @@ Portfolio section  */
    .verticalInnerCards{
     height: 20rem ;
    }
+
+   #play-button>img{
+    width: 3rem;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    right: 50%;
+}
+.quotes{
+    width: 60px;
+    position: relative;
+    bottom: 10%;
+    z-index: 1;
+} 
+
+/* .t-cards{
+    min-width: 100%;
+    } */
+
+
    .btn-primary{
     width: 50%;
    }

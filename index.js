@@ -37,3 +37,26 @@ hoverWord.addEventListener("mouseleave", removeHoverEffects);
 
 hoverImage.addEventListener("mouseenter", addHoverEffects);
 hoverImage.addEventListener("mouseleave", removeHoverEffects);
+
+
+const video=document.getElementById("myVideo");
+const playButton=document.getElementById("play-button")
+
+playButton.addEventListener("click", () => {
+    if (video.paused) {
+        video.play();
+        playButton.style.display="none";
+    } else {
+        video.pause();
+        playButton.style.display="block"
+    }
+
+});
+
+video.addEventListener("pause", () => {
+    playButton.style.display='block';
+})
+
+video.addEventListener("ended", () => {
+    playButton.style.display='block';
+})
