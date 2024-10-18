@@ -9,18 +9,9 @@ body{
 }
 .wrapper{
     max-width: 1360px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.wrapper2{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-inline: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 h1{
@@ -63,7 +54,7 @@ h4{
 
 p{
     font-size: 1.5rem;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     color:rgb(230, 230, 230);
     
 }
@@ -224,36 +215,35 @@ Hero area */
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(16, 16, 16);
-    height: 60dvh;
     position: relative;
     justify-content: center;
     margin: 0;
+    width: 100%;
 
 }
 .h-section{
     display: flex;
     justify-content: center;
-    padding: 10dvh;
+    padding: 60px;
     border-radius: 50px;
     background-color: rgb(24, 24, 24);
-}
-
-.h-content{
-    display: inline-block;
-    width:fit-content;
+    position: relative;
+    overflow: hidden;
+    gap: 30px;
+    width: 100%;
     align-content: center;
-
+    align-items: center;
 }
 
 
 .hero-image>img{
-    height: 60dvh;
+    height: 110%;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
+    top: 3dvh;
+} 
 
-}
-
-.circle{
+.hero-image>.circle{
     width: 40dvh;
     height: 40dvh;
     border-radius: 50%;
@@ -262,6 +252,7 @@ Hero area */
     animation: scale 0.5s ease-in-out forwards , wiggle 2s ease-in-out infinite 0.5s;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
+    overflow: hidden;
 }
 
 /* Circle animation */
@@ -296,7 +287,7 @@ Portfolio section  */
 
 .portfolio{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: repeat(3,1fr); 
     gap: 30px;
     
 }
@@ -308,12 +299,9 @@ Portfolio section  */
     padding: 30px;
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: 600px;
     background-color: #181818 ;
     border-radius: 30px;
-    align-content: center;
-    position: relative;
+
 
 }
  
@@ -332,11 +320,11 @@ Portfolio section  */
 }
 .innerCards{
     width: auto;
-    height: 100%;
+    height: 20rem;
     background: #434343;
     border-radius: 30px;
     overflow: hidden;
-   margin-top: 2dvh;
+    margin-top: 2dvh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -356,8 +344,8 @@ Portfolio section  */
     border-radius: 30px;
     align-content: center;
     align-items: center;
-    padding: 30px 30px 30px 50px;
-    /* gap: 50px; */
+    padding: 30px 30px 30px 30px;
+    gap: 50px;
     justify-items: center;
 
 }
@@ -389,219 +377,42 @@ Portfolio section  */
  }
  
 
- @media(min-width: 960px) and (max-width:1360px)
- {  
-    .wrapper{
-        min-width: 1360px;
-    }
-    .h-section{
-        position: relative;
-        padding: 10dvh;
-        width: 100%;
-    }
-    .hero-area{
-        display: block;
-    }
-    .hero-image{
-        position: absolute;
-        top: 20dvh;
-        left: 60dvh;
-    }
-    p{  font-size: 27px;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-    }
-    h1{
-        font-size: 4.5rem;
-    }
-    .h-content{
-        font-size: 4rem;
-        position: absolute;
-        right: 50dvh;
-        top: 13dvh
-    }
-    h4{
-        font-size: 4rem;
-        margin-top: 10dvh;
-      
-    }
- }
-
-
-@media(max-width: 960px)
-{
-
-   .wrapper{
-    min-width: 960px;
-
-   }
-   .wrapper2{
-    min-width: 960px;
-
-   }
-   
-    h1{
-        font-size: 5rem;
-    }
-
-    .hero-area{
-        display: block;
-    }
-    .hero-section{
-      
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-    .h-section{
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-
-    }
-    .h-content{
+ @media (max-width:728px){
+    .portfolio{
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
-    .btn-primary{
-        width: 80%;
-        font-size: 27px;
-        align-items: center;
-
+    .h-section{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
     }
-
-    .btn-secondary{
-        width: 80%;
-        font-size: 27px;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-    }
-    .hero-image{
-        position: relative;
-    }
-    .hero-image>div{
-        position: relative;
-        top: 20%;
+    h1{
+        font-size: 3rem;
     }
     .hero-image>img{
-        position: absolute;
-        top:0.3dvh;
-        height: 50dvh;
+        height: 50%;
+        align-self: flex-end;
+    }
+   .hero-image{
+    margin-top: 50px
+   }
 
-    }    
+   .item2{
+    flex-direction: column;
+    gap:30px;
+   }
 
-    .portfolio{
-
-        width: 100%;
-        margin-top: 2dvh;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 80px;
-    
-
-    }
-    .innerCards{
-        height: 50dvh;
-    }
-    .portfolioCard{
-        width: 100dvh;
-        height: auto;
-        padding: 50px;
-    }
-    .portfolioCard:hover{
-        filter: none;
-        border: 0;
-        transition: none;
-        background-color: #181818 ;
-    }
-    .item2{
-        display: flex;
-        flex-direction: column;
-        font-size: 5rem;
-    }
-    .verticalInnerCards{
-        margin-top: 30px;
-        height: 50dvh;
-    }
-    h3{
-        justify-content: left;
-        font-size: 5rem;
-    }
-
-    .item2>#verticalfont{
-        font-size: 5rem;
-    }
-
-    h4{
-        font-size: 4rem;
-        margin-top: 60dvh;
-      
-    }
-    
-}
-
-
-@media (min-width: 481px) and (max-width: 600px) {
-    .wrapper{
-        min-width: 600px;
-       }
-    .wrapper2{
-        min-width: 600px;
-       }
-    h4{
-        font-size: 4rem;
-        margin-top: 90dvh;
-      
-    }
-}
-
-@media (min-width: 380px) and (max-width: 480px) {
-    .wrapper{
-        min-width: 500px;
-       }
-    .wrapper2{
-        min-width: 480px;
-       }
-    h4{
-        font-size: 4rem;
-        margin-top: 80dvh;
-      
-    }
-    .portfolio{
-
-        width: auto;
-        margin-top: 2dvh;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 80px;
-    
-
-    }
-    .innerCards{
-        height: 50dvh;
-        width: auto;
-    }
-    .portfolioCard{
-        width: auto;
-        height: auto ;
-        padding: 30px;
-    }
-}
-
-@media (max-width:379px) {
-    .wrapper{
-        min-width: 520px;
-       }
-    .wrapper2{
-        min-width: 500px;
-       }
-    h4{
-        font-size: 4rem;
-        margin-top: 100dvh;
-}
+   .verticalInnerCards{
+    height: 20rem ;
+   }
+   .btn-primary{
+    width: 50%;
+   }
+   .btn-secondary{
+    width: 50%;
+   }
+   .h3{
+    font-size: 2rem;
+   }
 }
