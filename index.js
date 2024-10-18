@@ -68,3 +68,8 @@ video.addEventListener('play', () => {
 video.addEventListener('pause', () => {
     playButton.style.display = 'block'; // Show play button when video pauses
 });
+
+// Hide play button when seeking
+video.addEventListener('seeked', () => {
+    playButton.style.display = 'none'; // Hide play button after seeking
+});
