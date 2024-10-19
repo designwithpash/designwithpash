@@ -556,7 +556,9 @@ Portfolio section  */
     font-size: 2rem;
     display: block;
    }
- 
+   .t-cards{
+    width: 100%;
+}
     .quotes{
         width: 60px;
         position: relative;
@@ -614,7 +616,10 @@ Portfolio section  */
     position: relative;
     bottom: 10%;
     z-index: 1;
-} 
+}
+       .t-cards{
+    width: 100%;
+}
 
 /* .t-cards{
     min-width: 100%;
