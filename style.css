@@ -535,10 +535,7 @@ Portfolio section  */
    
 
    #play-button>img{
-    width: 6rem;
-    position: absolute;
-    left: 45%;
-    top: 45%;
+    width: 0rem;
 }
    .verticalInnerCards{
     height: 50dvh ;
@@ -610,11 +607,7 @@ Portfolio section  */
    }
 
    #play-button>img{
-    width: 3rem;
-    position: absolute;
-    left: 45%;
-    top: 30%;
-    right: 50%;
+    width: 0rem;
 }
 .quotes{
     width: 60px;
