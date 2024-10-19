@@ -410,7 +410,6 @@ Portfolio section  */
     transform: scale(1.5);
     object-fit: fill;
     border-radius: 30px;
-    position: absolute;
     filter: drop-shadow(5px 30px 30px #383838);
  }
 
@@ -420,7 +419,7 @@ Portfolio section  */
  #myVideo{
     display: flex;
     border-radius: 30px;
-    width: 100%;
+    width: 60%;
 }
 .videoSection{
     display: flex;
@@ -431,10 +430,8 @@ Portfolio section  */
     width: 5rem;
     height:5rem;
     position: absolute;
-    left: 50%;
-    bottom: 50%;
-    top: 50%;
-    right: 50%;
+    left: 48%;
+    bottom: 44%;
 }
 .testimonialCards{
     display: flex;
@@ -509,18 +506,21 @@ Portfolio section  */
         font-size: 4rem;
         line-height: 1.5;
     }
+    #myVideo{
+        width: 100%;
+    }
     .circle{
         top: 60%;
-        left: 30%;
+        left: 40%;
         height: 40vw;
         width: 40vw;
     }
 
     .circle-front{
         top: 90%;
-        left: 60%;
-        width: 30vw;
-        height: 30vw;
+        left: 50%;
+        width: 50vw;
+        height: 50vw;
     }
     #pash{
         height: 50rem;
@@ -535,14 +535,18 @@ Portfolio section  */
    
 
    #play-button>img{
-    width: 0rem;
+    width: 6rem;
+    position: absolute;
+    left: 45%;
+    top: 45%;
 }
    .verticalInnerCards{
     height: 50dvh ;
     
    }
    .innerCards{
-    height: 50dvh;}
+    height: 50dvh;
+    }
     .portfolioCard{
         text-align: center;
     }
@@ -559,6 +563,7 @@ Portfolio section  */
    .t-cards{
     width: 100%;
 }
+ 
     .quotes{
         width: 60px;
         position: relative;
@@ -597,7 +602,7 @@ Portfolio section  */
         height: 30rem;
     }
     p{
-        font-size: 22px;
+        font-size: 16px;
     }
    .item2{
     flex-direction: column;
@@ -609,27 +614,33 @@ Portfolio section  */
    }
 
    #play-button>img{
-    width: 0rem;
+    width: 3rem;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    right: 50%;
+}
+.t-cards{
+    width: 100%;
 }
 .quotes{
     width: 60px;
     position: relative;
     bottom: 10%;
     z-index: 1;
-}
-       .t-cards{
-    width: 100%;
-}
+} 
 
 /* .t-cards{
     min-width: 100%;
     } */
+#myVideo{
+    width: 100%;
+}
     .footer{
         flex-direction: column;
         text-align: center;
         gap: 30px;
     }
-
    .btn-primary{
     width: 50%;
    }
