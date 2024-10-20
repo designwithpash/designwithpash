@@ -678,7 +678,7 @@ Portfolio section  */
 }
 #arrow{
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 30%;
     transform: rotate(25deg);
 
