@@ -541,6 +541,9 @@ Portfolio section  */
     gap: 50px;
     flex-wrap: wrap;
 }
+.innerWebsite-m>div>img{
+    width: 100%;
+}
 
 .innerWebsite-m-image>img{
     width: 302px;
