@@ -132,7 +132,7 @@ p{
     color: white;
     margin-bottom: 20px;
 }
-.navbar>img{
+.navbar>a>img{
     margin-top: 10px;
     color: #fff;
 }
