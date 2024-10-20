@@ -60,3 +60,7 @@ video.addEventListener("pause", () => {
 video.addEventListener("ended", () => {
     playButton.style.display='block';
 })
+
+video.addEventListener("seeked", () => {
+    playButton.style.display='none';
+})
