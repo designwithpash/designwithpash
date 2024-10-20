@@ -535,14 +535,53 @@ Portfolio section  */
     align-items: center;
 
 }
+.innerWebsite-m>div>img{
+    width: 100%;
+}
+
+.OtherProject{
+    columns: 4;
+    column-gap: 20px;
+}
+
+.OtherProject img{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    border: 2px solid rgb(52, 52, 52);
+    transition: transform 0.3s ease;
+    
+}
+.OtherProject img:hover{
+    transform: scale(1.05);
+}
+
+.popup{
+    display: none ;
+    width: 100%;
+    justify-content: center;
+    z-index: 1000;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 23.25%;
+    background-color: #00000099;
+
+}
+
+.popup-content{
+    max-width: 80%;
+    border-radius: 30px;
+  
+}
+
+
+
 .innerWebsite-m-image{
     display: flex;
     align-items: flex-start;
     gap: 50px;
     flex-wrap: wrap;
-}
-.innerWebsite-m>div>img{
-    width: 100%;
 }
 
 .innerWebsite-m-image>img{
@@ -704,6 +743,11 @@ Portfolio section  */
     .xdScreen{
         display: none;
        }
+    .OtherProject{
+        columns: 2;
+        column-gap: 20px;
+    }
+    
  }
 
  @media (max-width:728px){
@@ -790,6 +834,10 @@ Portfolio section  */
    }
    .innerWebsite-m-image>img{
    width: 100%;
+}
+.OtherProject{
+    columns: 2;
+    column-gap: 20px;
 }
 
 }
