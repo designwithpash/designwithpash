@@ -705,10 +705,7 @@ Portfolio section  */
    
 
    #play-button>img{
-    width: 6rem;
-    position: absolute;
-    left: 45%;
-    top: 45%;
+    display:none;
 }
    .verticalInnerCards{
     height: 50dvh ;
@@ -792,11 +789,7 @@ Portfolio section  */
    }
 
    #play-button>img{
-    width: 3rem;
-    position: absolute;
-    left: 45%;
-    top: 30%;
-    right: 50%;
+    display: none;
 }
 .t-cards{
     width: 100%;
