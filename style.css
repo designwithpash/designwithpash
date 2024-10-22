@@ -1,17 +1,22 @@
 
 
 /* -------Properties----- */
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "poppins";
     margin: 0;
     background-color: #101010;
+    user-select: none;
+    padding-top: 70px;
 }
 .wrapper{
     max-width: 1360px;
     margin-inline: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    box-sizing: border-box;
 }
 
 h1{
@@ -129,6 +134,12 @@ p{
 
 .navbar-bg{
     background-color: rgb(16, 16, 16);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .navbar{
     display: flex;
@@ -136,18 +147,9 @@ p{
     background-color: rgb(16, 16, 16);
     color: white;
     align-items: center;
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    left: 23%;
-    z-index: 1000;
-    padding-bottom: 12px;
-    margin-bottom: 30dvh;
-    
    
 }
 .navbar>a>img{
-    margin-top: 10px;
     color: #fff;
 }
 .nav-item{
@@ -240,7 +242,7 @@ Hero area */
 .hero-area{
     display: flex;
     justify-content: center;
-    margin-top: 13dvh;
+    margin-top:4dvh;
 }
 
 .hero-section{
@@ -460,8 +462,8 @@ Portfolio section  */
 
  #myVideo{
     display: flex;
-    border-radius: 30px;
-    width: 60%;
+    border-radius: 20px;
+    width: 100%;
 }
 .videoSection{
     display: flex;
@@ -482,6 +484,7 @@ Portfolio section  */
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    width: 100%;
 }
 
 .quotes{
@@ -491,11 +494,12 @@ Portfolio section  */
 }
 .t-cards{
     margin-top: 50px;
-    width: 333px;
+    width: 328px;
     height: auto;
     background-color: #181818;
     border-radius: 30px;
     padding: 50px;
+    user-select: none;
     
 }
 .t-image{
@@ -513,10 +517,11 @@ Portfolio section  */
 .contact{
     display: flex;
     background-color: #181818;
-    padding: 50px;
+    padding: 30px 0px 30px 0px ;
     margin-top: 30px;
     border-radius: 30px;
     justify-content: center;
+    user-select: none;
 }
 .contact>div{   
     display: flex;
@@ -535,6 +540,15 @@ Portfolio section  */
     align-items: center;
     flex-wrap: wrap;
 }
+
+#email{
+    color: #ffdbc7;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
 .contactCTA>div{
     display: flex;
     gap: 10px;
@@ -585,6 +599,7 @@ Portfolio section  */
 .innerWebsite-m>div>img{
     width: 100%;
 }
+
 
 .OtherProject{
     columns: 4;
@@ -672,7 +687,7 @@ Portfolio section  */
     position: relative;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(23, 23, 23);
     padding: 20px;
     border-radius: 50px;
     justify-content: center;
@@ -681,9 +696,9 @@ Portfolio section  */
 
 .responsive-m-app>h1{
     margin-left: 10dvh;
-    font-size: 85px;
+    font-size: 65px;
     line-height: 1.25;
-    color: #000;
+    color: #ffffff;
 
 }
 .responsive-m-app>#arrow{
@@ -694,11 +709,47 @@ Portfolio section  */
 }
 #arrow{
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 30%;
     transform: rotate(25deg);
 
 }
+
+.scrollTop{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    right: 10%;
+    bottom: 10%;
+    z-index: 2000;}
+#stickyCircle{
+    width: 100px;
+    height: 100px;
+    background-color: #ffdb12;
+  
+    border-radius: 50%;
+    color: rgb(6, 6, 6);
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    user-select: none;
+}
+
+#stickyCircle:hover{
+    filter: drop-shadow(0px 20px 50px #ffd00090);
+    transform: scale(1.05);
+    transition: 0.25s ease;
+    cursor:pointer;
+    
+}
+.apps{
+    border-radius: 30px;
+}
+
 
  @media (min-width: 729px) and (max-width:1359px){
     .portfolio{
@@ -749,7 +800,7 @@ Portfolio section  */
     flex-direction: column;
     text-align: center;
    }
-   
+
 
    #play-button>img{
     width: 6rem;
@@ -767,9 +818,12 @@ Portfolio section  */
     .portfolioCard{
         text-align: center;
     }
-   .btn-primary{
-    width: 80% !important;
-   }
+    #topCTA{
+        padding: 10px 30px 10px 30px;
+        width: fit-content;
+        font-size: medium;
+        margin: 0
+    }
    .btn-secondary{
     width: 94%;
    }
@@ -797,11 +851,18 @@ Portfolio section  */
     .contact br{
         display: none;
     }
-    
+   
     
  }
 
  @media (max-width:728px){
+   
+    .nav-item>#li1{
+        display: none;
+    }
+     /* .navbar>a{
+        margin-left: 20px;
+     } */
     .portfolio{
         display: flex;
         flex-direction: column;
@@ -816,6 +877,7 @@ Portfolio section  */
         font-size: 2.5rem;
         line-height: 1.5;
     }
+ 
     .circle{
         top: 60%;
         height: 80vw;
@@ -857,7 +919,8 @@ Portfolio section  */
     position: relative;
     bottom: 10%;
     z-index: 1;
-} 
+}
+ 
 
 /* .t-cards{
     min-width: 100%;
@@ -871,7 +934,9 @@ Portfolio section  */
         gap: 30px;
     }
    .btn-primary{
-    width: 50%;
+   padding: 10px 10px 10px 10px ;
+   margin: 0;
+   width: 100%;
    }
    .btn-secondary{
     width: 50%;
@@ -894,15 +959,47 @@ Portfolio section  */
     padding: 30px;
 }
 .contactCTA{
-    margin-right: 20%;
+    margin-right: 0%;
 }
 .contactCTA>.btn-primary{
-    width: 80%;}
+    width: 70%;
+}
 
 .contact br{
     display: none;
 }
+.navbar{
+    padding: 10px;
+    justify-content:space-between;
+    gap: 40%;
+    
+}
+.navbar>div{
+    padding: 0;
+}
+#topCTA{
+    padding: 10px 30px 10px 30px;
+    width: auto;
+    font-size: medium;
 
 }
+.nav-item>li{
+    width: 100%;
+}
+.nav-item{
+    margin: 0;
+    padding-inline-start: 0;
+}
+#stickyCircle{
+    padding: 5px;
+    font-size: 15px;
+    width: 80px;
+    height: 80px;
 
+}
+.scrollTop{
+    bottom: 15%;
+    right: 8%;
+}
 
+}
