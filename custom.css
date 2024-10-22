@@ -1,11 +1,14 @@
 
 
 /* -------Properties----- */
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "poppins";
     margin: 0;
     background-color: #f1f1f1;
+    
 }
 .wrapper{
     max-width: 1360px;
@@ -493,6 +496,7 @@ Portfolio section  */
     height: 80px;
     border-radius: 50%
 }
+
 .contact{
     display: flex;
     background-color: #ffffff;
@@ -523,6 +527,38 @@ Portfolio section  */
     gap: 10px;
    
 }
+.scrollTop{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    right: 10%;
+    bottom: 10%;
+    z-index: 2000;}
+#stickyCircle{
+    width: 100px;
+    height: 100px;
+    background-color: #ffdb12;
+  
+    border-radius: 50%;
+    color: rgb(6, 6, 6);
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    user-select: none;
+}
+
+#stickyCircle:hover{
+    filter: drop-shadow(0px 20px 50px #ffd00090);
+    transform: scale(1.05);
+    transition: 0.25s ease;
+    cursor:pointer;
+    
+}
+
 .footer{
     display: flex;
     justify-content: space-between;
