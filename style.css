@@ -445,7 +445,7 @@ Portfolio section  */
  #myVideo{
     display: flex;
     border-radius: 30px;    
-    width: 60%;
+    width: 100%;
 }
 .videoSection{
     display: flex;
