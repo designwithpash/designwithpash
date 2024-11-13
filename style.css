@@ -988,8 +988,6 @@ Portfolio section  */
 }
 .navbar{
     padding: 10px;
-    justify-content:space-between;
-    gap: 40%;
     width: 100%;
     margin-top: 0px;
     border-radius: 0;
@@ -1002,6 +1000,7 @@ Portfolio section  */
     padding: 10px 30px 10px 30px;
     width: auto;
     font-size: medium;
+    white-space: nowrap;
 
 }
 .nav-item>li{
