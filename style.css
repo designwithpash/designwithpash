@@ -872,7 +872,9 @@ Portfolio section  */
  }
 
  @media (max-width:728px){
-   
+   .navbar>a>img{
+       height:50px;}
+     
     .nav-item>#li1{
         display: none;
     }
