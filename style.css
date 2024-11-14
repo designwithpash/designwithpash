@@ -916,6 +916,7 @@ Portfolio section  */
    .item2{
     flex-direction: column;
     gap:30px;
+    padding: 30px;
    }
 
    .verticalInnerCards{
